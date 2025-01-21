@@ -11,7 +11,7 @@ navbarPage(
       sidebarLayout(
         sidebarPanel(
           strong(h1("Vos options de comparaison")),
-          h3(textInput("nom", "Quel est ton nom ?"),
+          h3(textInput("nom", "Quel est votre nom ?"),
              textOutput("salutation")),
           img(src = "voiture1.png", height = "300px", width = "500px", alt = "Image d'une voiture") ),
         mainPanel(
