@@ -10,7 +10,7 @@ navbarPage(
       titlePanel("Bienvenue dans le comparateur de voitures"),
       sidebarLayout(
         sidebarPanel(
-          strong(h1("Options de comparaison")),
+          strong(h1("Vos options de comparaison")),
           h3(textInput("nom", "Quel est ton nom ?"),
              textOutput("salutation")),
           img(src = "voiture1.png", height = "300px", width = "500px", alt = "Image d'une voiture") ),
@@ -19,14 +19,14 @@ navbarPage(
           p("1. Rendez-vous dans l'onglet 'Comparaison de voitures' pour sélectionner et comparer deux voitures."),
           p("2. Rendez-vous dans l'onglet 'Vos voitures idéals' pour voire 10 voitures correspondante a vos envie de performance."),
           p("3. Utilisez les curseurs pour filtrer les voitures selon le temps en secondes pour parcourir un quart de miles et la puissance de la voiture en chevaux."),
-          p("4. Rendez-vous dans l'onglet 'nos modéles' les plus performant pour voire quelles sont nos voitures avec le meilleur rapport poids puisance.")
+          p("4. Rendez-vous dans l'onglet 'Nos modéles les plus performants' pour voire quelles sont nos voitures avec le meilleur rapport poids puisance.")
         )
       )
     )
   ),
   
   tabPanel(
-    "Détails des modèles",
+    "comparaison de voitures",
     fluidPage(
       sidebarLayout(
         sidebarPanel(
@@ -89,7 +89,7 @@ navbarPage(
     )
   ),
   tabPanel(
-    "Graphique",
+    "Nos modéles les plus performants",
     fluidPage(
       titlePanel("Graphique du rapport Poids/Puissance"),
       mainPanel(
